@@ -19,10 +19,9 @@ img {
   height: auto;
 }
 /*ШАПКА САЙТА*/
-.header {
-  width: 1600px;
-  height: 80px;
+.header-container {
   display: flex;
+  align-items: center;
 }
 .logo-prefix {
   color: #2196f3;
@@ -36,22 +35,16 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   display: flex;
-  padding-top: 24px;
-  margin-left: 215px;
-  padding-bottom: 25px;
 }
 .nav {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin: 0;
-  margin-left: 85px;
-}
-.nav-item {
-  margin-right: 50px;
-}
-.nav-item:last-child {
-  margin-right: 0;
+  padding-left: 0;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
 }
 
 .nav-link {
@@ -74,7 +67,7 @@ img {
 }
 .address-container {
   display: flex;
-  margin: 0;
+  padding-left: 0;
 }
 
 .header-address {
