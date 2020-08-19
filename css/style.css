@@ -19,9 +19,22 @@ img {
   height: auto;
 }
 /*ШАПКА САЙТА*/
+.header {
+  max-width;
+  height: 80px;
+  display:flex;
+  justify-content: space-between;
+}
 .header-container {
-  display: flex;
-  align-items: center;
+  display:flex;
+}
+.studio-portfolio-contacts {
+  display:flex;
+  margin-top:32px;
+  margin-bottom:32px;
+}
+.nav-items {
+  margin-left:50px;
 }
 .logo-prefix {
   color: #2196f3;
@@ -35,16 +48,8 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   display: flex;
-}
-.nav {
-  display: flex;
-  padding-left: 0;
-  max-width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: center;
+  padding-top:24px;
+  padding-bottom:25px;
 }
 
 .nav-link {
@@ -65,10 +70,6 @@ img {
 .nav-link-active {
   color: #2196f3;
 }
-.address-container {
-  display: flex;
-  padding-left: 0;
-}
 
 .header-address {
   font-style: normal;
@@ -83,6 +84,13 @@ img {
 .header-address:focus {
   color: #2196f3;
 }
+.address-list {
+  display:flex;
+}
+.address-item {
+  margin-left:50px;
+}
+
 
 /*HERO СЕКЦИЯ*/
 
