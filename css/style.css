@@ -18,23 +18,28 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
 /*ШАПКА САЙТА*/
 .header {
-  max-width;
   height: 80px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 .header-container {
-  display:flex;
+  display: flex;
 }
 .studio-portfolio-contacts {
-  display:flex;
-  margin-top:32px;
-  margin-bottom:32px;
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .nav-items {
-  margin-left:50px;
+  margin-left: 50px;
 }
 .logo-prefix {
   color: #2196f3;
@@ -48,8 +53,8 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   display: flex;
-  padding-top:24px;
-  padding-bottom:25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .nav-link {
@@ -84,13 +89,15 @@ img {
 .header-address:focus {
   color: #2196f3;
 }
+
 .address-list {
-  display:flex;
+  display: flex;
+  margin-top: 32px;
+  margin-left: auto;
 }
 .address-item {
-  margin-left:50px;
+  margin-left: 50px;
 }
-
 
 /*HERO СЕКЦИЯ*/
 
@@ -99,11 +106,21 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;*/
-
-  background: url(../images/hero/header-bg.jpg) center center/cover no-repeat;
+  /*background-image: linear-gradient( to right,
+   var(--hero-gradient-color), var(--hero-gradient-color) ), url(../images/hero-image.jpg); */
+  background: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/hero/header-bg.jpg) center center/cover no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -113,6 +130,11 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+/*     display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
 .hero-button {
   color: #ffffff;
   font-weight: bold;

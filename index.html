@@ -11,13 +11,19 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
   </head>
-
+  <!--
+  .block(header,footer,section)
+    .container
+      span 
+      a
+      div
+-->
   <body>
     <!--ШАПКА САЙТА-->
     <header class="header">
-      <div class="header-container">
-        <a class="logo" href="./index.html"
-          ><span class="logo-prefix">Web</span> Studio</a
+      <div class="header-container container">
+        <a class="logo" href="./index.html">
+          <span class="logo-prefix">Web</span> Studio</a
         >
 
         <nav>
@@ -33,22 +39,19 @@
             </li>
           </ul>
         </nav>
-      </div>
-      <div>
-        <address>
-          <ul class="address-list">
-            <li>
-              <a class="header-address" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address-item">
-              <a class="header-address" href="tel:+380961111111">
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+
+        <ul class="address-list">
+          <li>
+            <a class="header-address" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="address-item">
+            <a class="header-address" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -254,7 +257,7 @@
         </ul>
       </section>
     </main>
-    <footer style="background: #2f303a;">
+    <footer style="background: #2f303a">
       <a class="logo" href="./index.html"
         ><span class="logo-prefix">Web</span> Studio</a
       >
