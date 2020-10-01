@@ -102,12 +102,6 @@ img {
 /*HERO СЕКЦИЯ*/
 
 .hero {
-  /*background-image: url();
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;*/
-  /*background-image: linear-gradient( to right,
-   var(--hero-gradient-color), var(--hero-gradient-color) ), url(../images/hero-image.jpg); */
   background: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
@@ -131,10 +125,6 @@ img {
   color: #ffffff;
 }
 
-/*     display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 .hero-button {
   color: #ffffff;
   font-weight: bold;
@@ -156,6 +146,28 @@ button:focus {
 }
 
 /* О НАС СЕКЦИЯ*/
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+.features-item {
+  width: 270px;
+}
+
+.features-item-img-wrapper {
+  background-color: #f5f4fa;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 270px;
+  height: 120px;
+}
+
+.about-us-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .about-us-title {
   text-transform: uppercase;
   color: #212121;
@@ -173,15 +185,19 @@ button:focus {
 }
 
 /* ЧЕМ МЫ ЗАНИМАЕСЯ СЕКЦИЯ*/
-.second-tite {
+.second-title {
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
+  font-weight: 700;
+  font-size: 36px;
   text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #212121;
+  margin-bottom: 50px;
+}
+.apps {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 .item-text {
   font-style: normal;
@@ -192,22 +208,121 @@ button:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+  width: 100%;
+}
+
+.apps-item {
+  background-image: url(../images/what_we_do/img.jpg);
+  width: 370px;
+  height: 294px;
+  align-items: flex-end;
+  display: flex;
+}
+
+.apps-item-mobile {
+  background-image: url(../images/what_we_do/box.jpg);
+}
+.apps-item-monitor {
+  background-image: url(../images/what_we_do/img1.jpg);
 }
 
 /*НАША КОМАНДА СЕКЦИЯ*/
+.ourteam {
+  background: #f5f4fa;
+  margin-top: 94px;
+  padding-bottom: 94px;
+}
 .teams-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
-
+  text-align: center;
   color: #212121;
+  padding-top: 94px;
 }
+.ourteam-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.ourteam-item {
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.ourteam-item:first-child {
+  margin-left: 0;
+}
+.ourteam-social-networks {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+}
+.icons-item-instagram {
+  width: 44px;
+  height: 44px;
+  display: block;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background: url(../images/ourteam/instagram.svg) center no-repeat;
+}
+.icons-item-instagram:hover {
+  background-color: #2196f3;
+  background-image: url(../images/ourteam/instagram-white.svg);
+}
+.icons-item-twitter {
+  width: 44px;
+  height: 44px;
+  display: block;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background: url(../images/ourteam/twitter.svg) center no-repeat;
+}
+.icons-item-twitter:hover {
+  background-color: #2196f3;
+  background-image: url(../images/ourteam/twitter-white.svg);
+}
+.icons-item-facebook {
+  width: 44px;
+  height: 44px;
+  display: block;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background: url(../images/ourteam/facebook.svg) center no-repeat;
+}
+.icons-item-facebook:hover {
+  background-color: #2196f3;
+  background-image: url(../images/ourteam/facebook-white.svg);
+}
+.icons-item-linkedin {
+  width: 44px;
+  height: 44px;
+  display: block;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background: url(../images/ourteam/linkedin.svg) center no-repeat;
+}
+.icons-item-linkedin:hover {
+  background-color: #2196f3;
+  background-image: url(../images/ourteam/linkedin-white.svg);
+}
+
 .profession-text {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: center;
 }
 
 .teams-name {
@@ -215,6 +330,7 @@ button:focus {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: #212121;
+  text-align: center;
 }
 
 /*ПОСТОЯННЫЕ КЛИЕНТЫ СЕКЦИЯ*/
@@ -225,9 +341,44 @@ button:focus {
   line-height: 42px;
   letter-spacing: 0.03em;
   color: #212121;
+  text-align: center;
+  padding-top: 94px;
+}
+.icons-list {
+  display: flex;
+  padding-top: 50px;
+}
+
+.icons-list-icon {
+  fill: #afb1b8;
+}
+
+.icons-list li:hover .icons-list-icon {
+  fill: #2196f3;
+}
+
+.icons-list li:hover .icons-list-link {
+  border: 1px solid #2196f3;
+}
+
+.icons-list-item {
+  border: 1px solid #afb1b8;
+  display: inline-block;
+  margin-left: 30px;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*ФУТЕР СЕКЦИЯ*/
+.footer-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
 .location {
   font-style: normal;
   font-weight: normal;
