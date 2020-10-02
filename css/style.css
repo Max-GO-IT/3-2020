@@ -357,7 +357,7 @@ button:focus {
   fill: #2196f3;
 }
 
-.icons-list li:hover .icons-list-link {
+.icons-list li:hover .icons-list-item {
   border: 1px solid #2196f3;
 }
 
@@ -374,10 +374,14 @@ button:focus {
 }
 
 /*ФУТЕР СЕКЦИЯ*/
+.studio {
+  color: #fff;
+}
 .footer-container {
   display: flex;
   text-align: center;
   justify-content: space-between;
+  margin-top: 94px;
 }
 .location {
   font-style: normal;
@@ -406,6 +410,26 @@ button:focus {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+}
+.footer-location {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-location-list {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.footer-networks {
+  padding-top: 72px;
+  margin: 0;
 }
 
 /*--------------------------------------------------------------*/
