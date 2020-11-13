@@ -14,38 +14,42 @@
 
   <body>
     <!--ШАПКА САЙТА-->
-    <header>
-      <a class="logo" href="./index.html"
-        ><span class="logo-prefix">Web</span> Studio</a
-      >
-      <nav class="nav">
-        <ul>
-          <li>
+    <header class="header">
+      <div class="header-container container">
+      <a class="logo" href="./index.html">
+      <span class="logo-prefix">Web</span> Studio</a>
+
+      <nav>
+        <ul class="studio-portfolio-contacts">
+          <li class="nav-items">
             <a class="nav-link" href="./index.html">Студия</a>
           </li>
-          <li>
-            <a class="nav-link nav-link-active" href="./portfolio.html"
-              >Портфолио</a
+          <li class="nav-items">
+            <a class="nav-link nav-link-active" href="./portfolio.html">Портфолио</a
             >
           </li>
-          <li>
+          <li class="nav-items">
             <a class="nav-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-      <address>
-        <a class="header-address" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
+      <ul class="address-list">
+        <li>
+        <a class="header-address" href="mailto:info@devstudio.com">
+          info@devstudio.com</a >
+          </li>
+        <li class="address-item">
         <a class="header-address" href="tel:+380961111111">
-          +38 096 111 11 11</a
-        >
-      </address>
+          +38 096 111 11 11</a>
+          </li>
+      </ul>
+      </div>
     </header>
     <main>
+
       <!--СЕКЦИЯ ПОРТФОЛИО-->
-      <section class="portfolio">
-        <ul class="button-section">
+      <div class="buttons-section">
+        <ul class="buttons">
           <li>
             <a href="#" class="portfolio-button portfolio-button-active">Все</a>
           </li>
@@ -54,6 +58,8 @@
           <li><a href="#" class="portfolio-button">Дизайн</a></li>
           <li><a href="#" class="portfolio-button">Маркетинг</a></li>
         </ul>
+      </div>
+      <div class="images-section">
         <ul class="portfolio-items">
           <li class="portfolio-item">
             <a href="#" class="portfolio-link">
@@ -61,7 +67,7 @@
                 <img
                   class="portfolio-image"
                   src="images/portfolio_images/portfolio-1.jpg"
-                  alt="картинка_двое_баскетболистов_в_игре"
+                  alt="картинка_список_людей"
                 />
                 <p class="portfolio-description">
                   Технокряк это современная площадка распространения
@@ -97,7 +103,7 @@
                 <img
                   class="portfolio-image"
                   src="images/portfolio_images/portfolio-image.jpg"
-                  alt="картинка_двое_баскетболистов_в_игре"
+                  alt="картинка_логотип_ресторана"
                 />
                 <p class="portfolio-description">
                   Технокряк это современная площадка распространения
@@ -115,7 +121,7 @@
                 <img
                   class="portfolio-image"
                   src="images/portfolio_images/portfolio-image-1.jpg"
-                  alt="картинка_двое_баскетболистов_в_игре"
+                  alt="картинка_наушники"
                 />
                 <p class="portfolio-description">
                   Технокряк это современная площадка распространения
@@ -133,7 +139,7 @@
                 <img
                   class="portfolio-image"
                   src="images/portfolio_images/portfolio-image-2.jpg"
-                  alt="картинка_двое_баскетболистов_в_игре"
+                  alt="картинка_две_коробочки"
                 />
                 <p class="portfolio-description">
                   Технокряк это современная площадка распространения
@@ -151,7 +157,7 @@
                 <img
                   class="portfolio-image"
                   src="images/portfolio_images/portfolio-image-3.jpg"
-                  alt="картинка_двое_баскетболистов_в_игре"
+                  alt="картинка_монитор"
                 />
                 <p class="portfolio-description">
                   Технокряк это современная площадка распространения
@@ -169,7 +175,7 @@
                 <img
                   class="portfolio-image"
                   src="images/portfolio_images/portfolio-image-4.jpg"
-                  alt="картинка_двое_баскетболистов_в_игре"
+                  alt="картинка_раскрытый_журнал"
                 />
                 <p class="portfolio-description">
                   Технокряк это современная площадка распространения
@@ -187,7 +193,7 @@
                 <img
                   class="portfolio-image"
                   src="images/portfolio_images/portfolio-image-5.jpg"
-                  alt="картинка_двое_баскетболистов_в_игре"
+                  alt="картинка_бирка_проэкта"
                 />
                 <p class="portfolio-description">
                   Технокряк это современная площадка распространения
@@ -205,7 +211,7 @@
                 <img
                   class="portfolio-image"
                   src="images/portfolio_images/portfolio-image-6.jpg"
-                  alt="картинка_двое_баскетболистов_в_игре"
+                  alt="картинка_руки_печатают_на_ноутбуке"
                 />
                 <p class="portfolio-description">
                   Технокряк это современная площадка распространения
@@ -218,16 +224,18 @@
             </a>
           </li>
         </ul>
-      </section>
+      </div>
     </main>
 
     <!--ФУТЕР-->
     <footer style="background: #2f303a;">
-      <a class="logo" href="./index.html"
-        ><span class="logo-prefix">Web</span> Studio</a
-      >
+      <div class="container footer-container">
+    <div class="footer-location">
+      <a class="footer-logo logo" href="./index.html">
+        <span class="logo-prefix">Web</span> 
+        <span class="studio">Studio</span></a>
       <address>
-        <ul>
+        <ul class="footer-location-list">
           <li>
             <a class="location" href=""> г. Киев, пр-т Леси Украинки,26</a>
           </li>
@@ -243,14 +251,34 @@
           </li>
         </ul>
       </address>
+    </div>
+    <div>
       <b class="call">присоединяйтесь</b>
-      <ul>
-        <li><a href="" aria-label="иконка инстаграма"></a></li>
-        <li><a href="" aria-label="иконка твиттера"></a></li>
-        <li><a href="" aria-label="иконка фейсбука"></a></li>
-        <li><a href="" aria-label="иконка линкедина "></a></li>
+      <ul class="footer-social-list">
+        <li>
+          <a class="icons-item icons-item-instagram" href="" aria-label="иконка инстаграма"></a></li>
+        <li>
+          <a class="icons-item icons-item-twitter" href="" aria-label="иконка твиттера"></a></li>
+        <li>
+          <a class="icons-item icons-item-facebook" href="" aria-label="иконка фейсбука"></a></li>
+        <li>
+          <a class="icons-item icons-item-linkedin" href="" aria-label="иконка линкедина "></a></li>
       </ul>
-      <b class="call"> Подпишитесь на рассылку</b>
+      </div>
+      <div>
+      <p class="subcribe-title">Подпишитесь на рассылку</p>
+        <form class="footer-form" action="#">
+          <input class="subcribe-input" type="text" placeholder="E-mail" name="E-mail" id="E-mail" />
+          <button type="submit" class="subcribe-submit"><span class="subscribe">Подписаться</span>
+            <svg class="button-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
+                fill="white" />
+            </svg>
+          </button>
+        </form>
+      </div>
+      </div>
     </footer>
   </body>
 </html>
